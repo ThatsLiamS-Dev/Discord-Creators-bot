@@ -4,3 +4,6 @@ jspm_packages/
 
 # dotenv environment variables file
 .env
+
+# Workspace environment files
+.vscode/
