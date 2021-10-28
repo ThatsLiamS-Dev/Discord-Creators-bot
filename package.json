@@ -15,5 +15,8 @@
 	"bugs": {
 		"url": "https://github.com/ThatsLiamS/Discord-Creators-bot/issues"
 	},
-	"homepage": "https://github.com/ThatsLiamS/Discord-Creators-bot#readme"
+	"homepage": "https://github.com/ThatsLiamS/Discord-Creators-bot#readme",
+	"devDependencies": {
+		"eslint": "^8.1.0"
+	}
 }
