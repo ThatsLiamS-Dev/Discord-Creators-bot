@@ -1,0 +1,19 @@
+{
+	"name": "discord-creators-bot",
+	"version": "0.1.0",
+	"description": "By the community, for the community.",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ThatsLiamS/Discord-Creators-bot.git"
+	},
+	"author": "Discord Creators' Community",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ThatsLiamS/Discord-Creators-bot/issues"
+	},
+	"homepage": "https://github.com/ThatsLiamS/Discord-Creators-bot#readme"
+}
