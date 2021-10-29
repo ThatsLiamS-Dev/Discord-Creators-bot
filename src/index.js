@@ -4,7 +4,7 @@ console.log(`Last restart: ${time.getHours()}:${time.getMinutes()}, ${time.getDa
 
 const Discord = require('discord.js');
 const client = new Discord.Client({
-	intents: ['GUILD_MESSAGES'],
+	intents: ['GUILD_MESSAGES', 'GUILD_INTEGRATIONS', 'GUILD_MEMBERS', 'GUILDS'],
 	partials: ['CHANNEL', 'MESSAGE', 'REACTION'],
 });
 
