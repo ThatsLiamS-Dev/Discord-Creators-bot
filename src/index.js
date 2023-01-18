@@ -2,18 +2,18 @@ const time = new Date();
 console.log(`Last restart: ${time.getHours()}:${time.getMinutes()}, ${time.getDate()}/${time.getMonth() + 1}/${time.getFullYear()}`);
 
 
-const Discord = require('discord.js');
-const client = new Discord.Client({
-	intents: ['GUILD_MESSAGES', 'GUILD_INTEGRATIONS', 'GUILD_MEMBERS', 'GUILDS'],
-	partials: ['CHANNEL', 'MESSAGE', 'REACTION'],
+const { Client, GatewayIntentBits, Partials } = require('discord.js');
+const client = new Client({
+	intents: [GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildIntegrations, GatewayIntentBits.GuildMembers, GatewayIntentBits.Guilds],
+	partials: [Partials.Channel, Partials.Message, Partials.Reaction],
 });
 
 
 const fs = require('fs');
-
 const eventFiles = fs.readdirSync(`${__dirname}/events`).filter(file => file.endsWith('.js'));
 for (const file of eventFiles) {
 	const event = require(`${__dirname}/events/${file}`);
+
 	if (event.once) client.once(event.name, (...args) => event.execute(...args, client));
 	else client.on(event.name, (...args) => event.execute(...args, client));
 }
