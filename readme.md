@@ -10,6 +10,6 @@ We're a Discord community exclusively for content creators: youtubers, streamers
 
 ## Bot Stats
 
-- **NodeJS:** v16
+- **NodeJS:** v18.9
 - **Hosting provider:** SparkedHost.com
-- **discord.js:** v13.2.0
+- **discord.js:** v14.7
