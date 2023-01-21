@@ -46,9 +46,9 @@ module.exports = {
 			[client.guilds.cache.size],
 			[client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0)],
 
-			client.shard.fetchClientValues('ws.ping'),
-			client.shard.fetchClientValues('guilds.cache.size'),
-			client.shard.broadcastEval(() => this.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0)),
+			// client.shard.fetchClientValues('ws.ping'),
+			// client.shard.fetchClientValues('guilds.cache.size'),
+			// client.shard.broadcastEval(() => this.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0)),
 		];
 		const results = await Promise.all(promises);
 
