@@ -8,6 +8,7 @@ module.exports = {
 
 	permissions: [],
 	defer: { defer: true, ephemeral: false },
+	cooldown: { time: 5, text: '5 Seconds' },
 
 	data: new SlashCommandBuilder()
 		.setName('whois')

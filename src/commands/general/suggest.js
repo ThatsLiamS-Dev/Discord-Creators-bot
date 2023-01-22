@@ -9,6 +9,7 @@ module.exports = {
 
 	permissions: [],
 	defer: { defer: false, ephemeral: false },
+	cooldown: { time: 10 * 60, text: '10 Minutes' },
 
 	data: new SlashCommandBuilder()
 		.setName('suggest')
