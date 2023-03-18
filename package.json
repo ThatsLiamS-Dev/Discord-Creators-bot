@@ -17,10 +17,10 @@
 	},
 	"homepage": "https://github.com/ThatsLiamS/Discord-Creators-bot#readme",
 	"devDependencies": {
-		"eslint": "^8.32.0"
+		"eslint": "^8.36.0"
 	},
 	"dependencies": {
-		"discord.js": "^14.7.1",
+		"discord.js": "^14.8.0",
 		"dotenv": "^16.0.3",
 		"moment": "^2.29.4"
 	}
