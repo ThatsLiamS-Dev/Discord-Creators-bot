@@ -17,7 +17,7 @@
 	},
 	"homepage": "https://github.com/ThatsLiamS/Discord-Creators-bot#readme",
 	"devDependencies": {
-		"eslint": "^8.47.0"
+		"eslint": "^8.56.0"
 	},
 	"dependencies": {
 		"discord.js": "^14.12.1",
